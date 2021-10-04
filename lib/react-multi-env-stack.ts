@@ -79,7 +79,7 @@ export class InfrastructureStack extends cdk.Stack {
 
     // Setup Bucket Deployment to automatically deploy new assets and invalidate cache
     new s3deploy.BucketDeployment(this, `${props.name}-s3deployment`, {
-      sources: [s3deploy.Source.asset("../build")],
+      sources: [s3deploy.Source.asset("./react-multi-env/build")],
       destinationBucket: s3Site,
       distribution: distribution,
       distributionPaths: ["/*"]

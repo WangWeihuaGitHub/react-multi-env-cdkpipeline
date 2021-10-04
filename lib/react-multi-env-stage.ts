@@ -19,6 +19,7 @@ export class InfrastructureStage extends Stage {
         name : props.name,
         domainname : props.domainname,
         hostedzone : props.hostedzone,
-        acmCertRef : props.acmCertRef});
+        acmCertRef : props.acmCertRef,
+        env: props?.env});
   }
 }
