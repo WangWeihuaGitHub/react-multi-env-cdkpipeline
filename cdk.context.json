@@ -1,4 +1,6 @@
 {
+  "assume-role-credentials:writeIamRoleName": "writeRole",
+  "assume-role-credentials:readIamRoleName": "readRole",
   "hosted-zone:account=500748059377:domainName=tpxaws-qa.com:region=us-west-2": {
     "Id": "/hostedzone/Z09680772LRE5XXX788QX",
     "Name": "tpxaws-qa.com."
