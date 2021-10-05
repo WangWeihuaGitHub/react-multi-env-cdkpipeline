@@ -1,1 +1,10 @@
-{}
+{
+  "hosted-zone:account=500748059377:domainName=tpxaws-qa.com:region=us-west-2": {
+    "Id": "/hostedzone/Z09680772LRE5XXX788QX",
+    "Name": "tpxaws-qa.com."
+  },
+  "hosted-zone:account=915271087263:domainName=tpxaws-dev.com:region=us-west-2": {
+    "Id": "/hostedzone/Z00434811KAYVKZFRXBS2",
+    "Name": "tpxaws-dev.com."
+  }
+}
