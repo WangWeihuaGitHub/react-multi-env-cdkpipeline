@@ -53,7 +53,8 @@ export class ReactMultiEnvCdkpipelineStack extends cdk.Stack {
             ]
           })
         ],
-        buildCommand: 'npm ci && cd react-multi-env && npm ci && npm run build && cd .. && npx cdk synth –-plugin cdk-assume-role-credential-plugin'
+        buildCommand: 'npm ci && cd react-multi-env && npm ci && npm run build && cd .. && npx cdk synth –-plugin cdk-assume-role-credential-plugin',
+        synthCommand: 'npx cdk synth –-plugin cdk-assume-role-credential-plugin'
       })
     });
   }
