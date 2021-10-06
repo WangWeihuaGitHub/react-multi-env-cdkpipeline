@@ -15,10 +15,10 @@ const delivery = new ReactMultiEnvCdkpipelineStack(app, 'react-app-DeliveryPipel
 
 delivery.pipeline.addApplicationStage(
   new InfrastructureStage(app, 'devReactApp', { 
-    name : `tpx-dev`,
-    domainname : `tpx-dev.tpxaws-dev.com`,
+    name : `react-dev`,
+    domainname : `react-dev.tpxaws-dev.com`,
     hostedzone : `tpxaws-dev.com`,
-    acmCertRef : `arn:aws:acm:us-east-1:915271087263:certificate/3d7ecafe-754c-4abc-a201-5acdda274d97`,
+    acmCertRef : `arn:aws:acm:us-east-1:915271087263:certificate/516abaed-3044-4355-9948-86d576d4d0f9`,
     env: {
       account: '915271087263',
       region: 'us-west-2'
@@ -28,10 +28,10 @@ delivery.pipeline.addApplicationStage(
 
 delivery.pipeline.addApplicationStage(
   new InfrastructureStage(app, 'qaReactApp', {
-    name : `tpx-qa`,
-    domainname : `tpx-qa.tpxaws-qa.com`,
+    name : `react-qa`,
+    domainname : `react-qa.tpxaws-qa.com`,
     hostedzone : `tpxaws-qa.com`,
-    acmCertRef : `arn:aws:acm:us-east-1:500748059377:certificate/45c003cd-d9b3-4027-962e-6527916134f8`,
+    acmCertRef : `arn:aws:acm:us-east-1:500748059377:certificate/9aca71ba-5d29-4455-a1cf-fd1dc6e7a0aa`,
     env: {
       account: '500748059377',
       region: 'us-west-2'
