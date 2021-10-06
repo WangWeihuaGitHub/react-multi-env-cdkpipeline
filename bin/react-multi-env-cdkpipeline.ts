@@ -5,7 +5,7 @@ import { ReactMultiEnvCdkpipelineStack } from '../lib/react-multi-env-cdkpipelin
 import { InfrastructureStage } from '../lib/react-multi-env-stage';
 
 const app = new cdk.App();
-const delivery = new ReactMultiEnvCdkpipelineStack(app, 'react-DeliveryPipeline', {
+const delivery = new ReactMultiEnvCdkpipelineStack(app, 'react-app-DeliveryPipeline', {
   name: 'react-app',
   env: {
     account: '290434217788',
